@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Empleos Temporales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/estilopagina.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar bg-primary navbar-dark">
+
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+
+                <h1> JOBS & JOBS</h1>
+            </a>
+
+
+            <button class="navbar-toggler d-block" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#s1" class="nav-link active" data-bs-toggle="tab">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#s2" class="nav-link" data-bs-toggle="tab">iniciar seccion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#s3" class="nav-link" data-bs-toggle="tab">Empleos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#s4" class="nav-link" data-bs-toggle="tab">publicar</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="tab-content">
+        <div class="tab-pane active " id="s1">
+            <br>
+
+            <h3 id="sub">Tu mejor Solución</h3>
+
+            <hr>
+            <pre>
+
+
+
+            </pre>
+            <div id="contenedor">
+                <div class="fila">
+                    <img id="imagen1" src="/descarga.jpg" alt="Imagen 1">
+                    <p id="texto">
+                        En un mundo laboral en constante cambio, la flexibilidad es clave. Nuestra plataforma de empleos
+                        temporales está diseñada para conectar a empresas con profesionales capacitados en busca de oportunidades
+                        de trabajo de corta duración. Ya sea que necesites cubrir un puesto por días, semanas o meses,
+                        aquí encontrarás el talento adecuado para cada necesidad.
+                    </p>
+                </div>
+                <pre>
+
+
+
+                </pre>
+                <div class="fila">
+
+                    <img id="imagen2" src="/istockphoto-117145047-612x612.jpg" alt="Imagen 2">
+                    <p id="texto2">
+                        Con un proceso ágil y eficiente, facilitamos la contratación de trabajadores calificados en
+                        diversas industrias, permitiendo a las empresas adaptarse rápidamente a sus demandas operativas.
+                        Además, brindamos a los profesionales la posibilidad de acceder a múltiples oportunidades
+                        laborales, ampliar su experiencia y fortalecer su red de contactos.
+                        <br>
+                        Únete a nuestra comunidad y descubre una nueva forma de trabajar, donde la flexibilidad y la
+                        eficiencia van de la mano para impulsar tu crecimiento y el de tu empresa.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+            <pre>
+
+
+            </pre>
+            <h3 style="text-align: center;">¿Que ofrecemos</h3>
+            <br>
+            <br>
+            <h4>Para los trabajadores:</h4>
+            <ul id="lista_trabajadores">
+                <li> Acceso a cientos de ofertas de empleo temporal: Filtra por ubicación, sector, salario y duración
+                    del contrato.</li>
+                <li>Registro rápido y sencillo: Crea tu perfil en minutos y empieza a postularte.</li>
+                <li> Notificaciones en tiempo real: Recibe alertas sobre nuevas oportunidades que coincidan con tu
+                    perfil.</li>
+                <li>Sistema de calificación: Gana reputación con cada trabajo completado y accede a mejores
+                    oportunidades.</li>
+                <li>Soporte y asesoramiento: Nuestro equipo está aquí para ayudarte a mejorar tu perfil y encontrar la
+                    mejor oferta.</li>
+            </ul>
+            <br>
+
+
+            <h4>Para los empleadores:</h4>
+            <ul id="lista_empleadores">
+                <li>Publicación de ofertas en minutos: Describe el puesto, el pago y la duración, y encuentra candidatos
+                    al instante. </li>
+                <li> Evaluaciones y referencias: Consulta calificaciones y opiniones de trabajadores anteriores antes de
+                    contratarlos.</li>
+                <li>Búsqueda de talento optimizada: Filtra por habilidades, experiencia y disponibilidad. </li>
+                <li>Gestión de postulaciones: Revisa, selecciona y contacta a candidatos fácilmente desde tu panel de
+                    control.</li>
+
+            </ul>
+
+
+            <pre>
+
+
+
+
+            </pre>
+            <h2><b>Empleos mas solicitados</b></h2>
+            <br>
+            <p>
+                Dentro de este apartado vas a encontrar los mas recientes empleos publicados:
+            </p>
+
+            <div class="container">
+                <section class="destacados">
+                    <div class="trabajo-destacado">
+                        <h3>Desarrollador Web</h3>
+                        <p><strong>Empresa:</strong> Tech Innovations</p>
+                        <p><strong>Salario:</strong> $25,000 - $35,000</p>
+                        <button class="btn">Aplicar Ahora</button>
+                    </div>
+                    <div class="trabajo-destacado">
+                        <h3>Diseñador UX/UI</h3>
+                        <p><strong>Empresa:</strong> Creative Solutions</p>
+                        <p><strong>Salario:</strong> $20,000 - $30,000</p>
+                        <button class="btn">Aplicar Ahora</button>
+                    </div>
+                    <div class="trabajo-destacado">
+                        <h3>Analista de Datos</h3>
+                        <p><strong>Empresa:</strong> Data Insights</p>
+                        <p><strong>Salario:</strong> $28,000 - $40,000</p>
+                        <button class="btn">Aplicar Ahora</button>
+                    </div>
+                </section>
+
+
+
+                <div class="lista-empleos">
+
+                    <div class="empleo">
+                        <h4>Ayudante de Carga</h4>
+                        <p><strong>Empresa:</strong> Logística Express</p>
+                        <p><strong>Ubicación:</strong> Ciudad de México</p>
+                        <p><strong>Duración:</strong> 1 semana</p>
+                        <button class="btn">Ver más</button>
+                    </div>
+                    <div class="empleo">
+                        <h4>Mesero para Evento</h4>
+                        <p><strong>Empresa:</strong> Eventos VIP</p>
+                        <p><strong>Ubicación:</strong> Guadalajara</p>
+                        <p><strong>Duración:</strong> 2 días</p>
+                        <button class="btn">Ver más</button>
+                    </div>
+                    <div class="empleo">
+                        <h4>Community Manager</h4>
+                        <p><strong>Empresa:</strong> Social Media Pro</p>
+                        <p><strong>Ubicación:</strong> Monterrey</p>
+                        <p><strong>Tipo:</strong> Tiempo completo</p>
+                        <button class="btn">Ver más</button>
+                    </div>
+                    <div class="empleo">
+                        <h4>Repartidor</h4>
+                        <p><strong>Empresa:</strong> Delivery Fast</p>
+                        <p><strong>Ubicación:</strong> Ciudad de México</p>
+                        <p><strong>Tipo:</strong> Medio tiempo</p>
+                        <button class="btn">Ver más</button>
+                    </div>
+                </div>
+                </section>
+            </div>
+
+            <footer class="bg-dark text-white py-3">
+                <div class="container text-center">
+                    <p class="mb-0">&copy; 2025 JOBS & JOBS. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+
+        </div>
+
+
+        <div class="tab-pane  " id="s2">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white text-center">
+                                <h3>Inicio de Sesión</h3>
+                            </div>
+                            <div class="card-body">
+
+                                <div class="mb-3">
+                                    <label for="tipoUsuario" class="form-label">Tipo de Usuario</label>
+                                    <select class="form-select" id="tipoUsuario">
+                                        <option value="">Seleccione un tipo de usuario</option>
+                                        <option value="empleador">Empleador</option>
+                                        <option value="administrador">Administrador</option>
+                                        <option value="empleado">Empleado</option>
+                                    </select>
+                                </div>
+
+
+                                <form id="loginForm">
+                                    <div class="mb-3">
+                                        <label for="correoElectronico" class="form-label">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="correoElectronico" required
+                                            placeholder="ejemplo@dominio.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="contrasena" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="contrasena" required
+                                            placeholder="Ingrese su contraseña">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="recordarme">
+                                        <label class="form-check-label" for="recordarme">Recordarme</label>
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                                    </div>
+                                </form>
+
+
+                                <div class="text-center mt-3">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#registroModal"
+                                        class="text-primary">
+                                        Registrarse
+                                    </a>
+                                    <span class="mx-2">|</span>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#recuperarContrasenaModal"
+                                        class="text-primary">
+                                        ¿Olvidaste tu contraseña?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="registroModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Registro de Usuario</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Tipo de Usuario</label>
+                                    <select class="form-select">
+                                        <option value="empleador">Empleador</option>
+                                        <option value="administrador">Administrador</option>
+                                        <option value="empleado">Empleado</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Confirmar Contraseña</label>
+                                    <input type="password" class="form-control" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="recuperarContrasenaModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Recuperar Contraseña</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" required
+                                        placeholder="Ingrese su correo electrónico">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Recuperar Contraseña</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <footer class="bg-dark text-white py-3">
+                <div class="container text-center">
+                    <p class="mb-0">&copy; 2025 JOBS & JOBS. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="tab-pane  " id="s3">
+
+            <div class="container">
+                <div class="job-search-platform">
+                    <div class="platform-header">
+                        <h1>Bolsa de Empleos Temporales</h1>
+                        <p>Encuentra tu próximo trabajo en minutos</p>
+                    </div>
+
+                    <div class="search-section">
+                        <input type="text" class="search-input" id="searchInput"
+                            placeholder="Buscar trabajo por título, palabra clave...">
+                        <select class="category-select" id="categoryFilter">
+                            <option value="">Todas las Categorías</option>
+                            <option value="construccion">Construcción</option>
+                            <option value="eventos">Eventos</option>
+                            <option value="limpieza">Limpieza</option>
+                            <option value="reparto">Reparto</option>
+                            <option value="cocina">Cocina</option>
+                            <option value="oficina">Trabajo de Oficina</option>
+                        </select>
+                        <select class="location-select" id="locationFilter">
+                            <option value="">Todas las Ubicaciones</option>
+                            <option value="cdmx">Ciudad de México</option>
+                            <option value="guadalajara">Guadalajara</option>
+                            <option value="monterrey">Monterrey</option>
+                            <option value="puebla">Puebla</option>
+                        </select>
+                        <button class="search-button" id="searchButton">Buscar Empleos</button>
+                    </div>
+
+                    <div id="jobListings" class="job-listings">
+
+                    </div>
+                </div>
+            </div>
+
+            <script src="funciones.js"></script>
+
+
+
+            <footer class="bg-dark text-white py-3">
+                <div class="container text-center">
+                    <p class="mb-0">&copy; 2025 JOBS & JOBS. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <br>
+        <div class="tab-pane  " id="s4">
+
+
+
+            <div class="container mt-5">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="text-center">Publicar Nueva Oferta de Empleo</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="jobPostingForm">
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Título del Puesto</label>
+                                    <input type="text" class="form-control" required
+                                        placeholder="Ej. Asistente Administrativo">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Categoría de Empleo</label>
+                                    <select class="form-select" required>
+                                        <option value="">Seleccionar Categoría</option>
+                                        <option value="administracion">Administración</option>
+                                        <option value="ventas">Ventas</option>
+                                        <option value="logistica">Logística</option>
+                                        <option value="tecnologia">Tecnología</option>
+                                        <option value="servicio-cliente">Servicio al Cliente</option>
+                                        <option value="produccion">Producción</option>
+                                        <option value="otros">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <label class="form-label">Tipo de Contrato</label>
+                                    <select class="form-select" required>
+                                        <option value="">Seleccionar Tipo</option>
+                                        <option value="temporal">Temporal</option>
+                                        <option value="medio-tiempo">Medio Tiempo</option>
+                                        <option value="proyecto">Por Proyecto</option>
+                                        <option value="practicas">Prácticas</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Duración del Contrato</label>
+                                    <input type="text" class="form-control" placeholder="Ej. 3 meses">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Salario</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" placeholder="Monto mensual">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label class="form-label">Descripción del Puesto</label>
+                                <textarea class="form-control" rows="5" required
+                                    placeholder="Describe las responsabilidades, requisitos y funciones del puesto"></textarea>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label class="form-label">Requisitos Mínimos</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Educación</label>
+                                        <select class="form-select">
+                                            <option value="">Seleccionar Nivel</option>
+                                            <option value="secundaria">Secundaria</option>
+                                            <option value="tecnico">Técnico</option>
+                                            <option value="universitario">Universitario</option>
+                                            <option value="postgrado">Postgrado</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Experiencia</label>
+                                        <select class="form-select">
+                                            <option value="">Seleccionar Experiencia</option>
+                                            <option value="sin-experiencia">Sin Experiencia</option>
+                                            <option value="0-1-ano">0-1 Año</option>
+                                            <option value="1-3-anos">1-3 Años</option>
+                                            <option value="3-5-anos">3-5 Años</option>
+                                            <option value="mas-5-anos">Más de 5 Años</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Persona de Contacto</label>
+                                    <input type="text" class="form-control" placeholder="Nombre completo">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Correo de Contacto</label>
+                                    <input type="email" class="form-control" placeholder="correo@empresa.com">
+                                </div>
+                            </div>
+
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Ciudad</label>
+                                    <input type="text" class="form-control" placeholder="Ciudad de trabajo">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Modalidad</label>
+                                    <select class="form-select">
+                                        <option value="">Seleccionar Modalidad</option>
+                                        <option value="presencial">Presencial</option>
+                                        <option value="remoto">Remoto</option>
+                                        <option value="hibrido">Híbrido</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label class="form-label">Habilidades Requeridas</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="habilidad1">
+                                    <label class="form-check-label" for="habilidad1">
+                                        Manejo de Office
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="habilidad2">
+                                    <label class="form-check-label" for="habilidad2">
+                                        Atención al Cliente
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="habilidad3">
+                                    <label class="form-check-label" for="habilidad3">
+                                        Trabajo en Equipo
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="button" class="btn btn-secondary me-md-2">Guardar Borrador</button>
+                                <button type="submit" class="btn btn-primary">Publicar Oferta</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <footer class="bg-dark text-white py-3">
+                <div class="container text-center">
+                    <p class="mb-0">&copy; 2025 JOBS & JOBS. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
