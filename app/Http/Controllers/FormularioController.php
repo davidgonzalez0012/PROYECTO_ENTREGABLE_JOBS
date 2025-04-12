@@ -39,5 +39,8 @@ class FormularioController extends Controller
         $usuarioregistrado->rol = $request->rol;
         $usuarioregistrado->email = $request->email;
         $usuarioregistrado->contraseña = $request->contraseña;
+        $usuarioregistrado->save();
+
+        return $usuarioregistrado;
     }
 }

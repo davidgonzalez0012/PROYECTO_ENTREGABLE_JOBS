@@ -6,18 +6,18 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    
+
     public function up(): void
     {
         Schema::create('usuarios', function (Blueprint $table) {
-            $table->id();
-            $table->string('nombre');
+        $table->id();
+        $table->string('nombre');
         $table->string('email')->unique();
         $table->string('contraseña');
         $table->enum('rol', ['empleador', 'trabajador']);
         $table->string('telefono')->nullable();
         $table->string('direccion')->nullable();
-        
+
 
             $table->timestamps();
         });
@@ -29,7 +29,7 @@ tokens_restablecimiento_contraseña', function (Blueprint $table) {
             $table->timestamp('creado_en')->nullable();
         });
 
-       
+
         Schema::create('cuentas', function (Blueprint $table) {
             $table->string('id')->primary();
             $table->foreignId('id_usuario')->nullable()->index();
@@ -38,7 +38,7 @@ tokens_restablecimiento_contraseña', function (Blueprint $table) {
             $table->longText('carga');
             $table->integer('ultima_actividad')->index();
         });
-    
+
     }
 
     public function down(): void
