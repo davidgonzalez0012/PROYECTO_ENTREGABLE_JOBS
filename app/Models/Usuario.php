@@ -37,7 +37,6 @@ class Usuario extends Authenticatable
     {
         return $this->hasMany(Mensaje::class, 'destinatario_id');
     }
-   
-    }
+}
 
 

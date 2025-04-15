@@ -147,7 +147,7 @@
 
                         <div class="mb-3">
                             <label class="form-label">Habilidades Requeridas</label>
-                        
+
                             {{-- Habilidades predefinidas
                             <div class="form-check">
                                 <input class="form-check-input habilidad-check" type="checkbox" value="Manejo de Office" id="habilidad1">
@@ -167,7 +167,7 @@
                                 {{-- <label for="otrasHabilidades" class="form-label">Otras habilidades (separadas por comas):</label> --}}
                                 <input type="text" class="form-control" id="otrasHabilidades" placeholder="Ej: Proactividad, JavaScript">
                             </div>
-                        
+
                             {{-- Campo oculto que se enviará al backend --}}
                             <input type="hidden" name="habilidades" id="habilidadesFinal">
                         </div>
