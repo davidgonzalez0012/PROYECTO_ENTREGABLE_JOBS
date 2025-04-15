@@ -1,7 +1,7 @@
 
 
 :root {
-    --color-texto: #f6eded;
+    --color-texto: #fcf3f3;
 }
 
 body {
@@ -439,3 +439,7 @@ cursor: pointer;
 transition: background-color 0.3s ease;
 
 }
+ .modal-content{
+
+background-color:rgba(0, 0, 0, 0.9);
+ }
