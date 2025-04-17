@@ -7,7 +7,16 @@ use Illuminate\Http\Request;
 
 class OfertaController extends Controller
 {
-    //
+
+    public function publicar()
+    {
+        return view('publicar_empleo');
+    }
+
+
+   
+
+    
     public function publicar_empleos(Request $request){
         $publicar = new Oferta();
         $publicar -> titulo = $request -> titulo;

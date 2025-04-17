@@ -13,7 +13,7 @@
             <ul class="navbar-nav ms-auto" id="myTab" role="tablist">
                 
                 <li><a href="{{ url('/pagina_inicio') }}" class="nav-link active">INICIO</a></li>
-                <li><a href="{{ url('/sesion') }}" class="nav-link active">INICIAR SESIÓN</a></li>
+                <li><a href="{{ url('/login') }}" class="nav-link active">INICIAR SESIÓN</a></li>
                 <li><a href="{{ url('/buscar_empleo') }}" class="nav-link active">EMPLEOS</a></li>
                 <li><a href="{{ url('/publicar_empleo') }}" class="nav-link active">PUBLICAR</a></li>
             </ul>

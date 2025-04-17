@@ -13,6 +13,8 @@
        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     @vite(['resources/css/estilopagina.css'])
+    @vite(['resources/css/estiloinicio_sesion.css'])
+    @vite('registrousuario.css')
     @vite('resources/js/funciones.js')
     @vite('resources/js/fondo3d.js')
     @vite('resources/js/loader.js')
