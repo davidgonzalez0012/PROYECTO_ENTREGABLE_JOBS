@@ -7,7 +7,7 @@
 
 <div class="tab-pane active  " id="s3">
 
-    <div class="container">
+    <div class="container00">
         <div class="job-search-platform">
             <div class="platform-header">
                 <h1>Bolsa de Empleos Temporales</h1>

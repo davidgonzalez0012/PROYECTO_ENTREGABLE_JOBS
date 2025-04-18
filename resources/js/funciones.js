@@ -33,12 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
             
             
-            
-            
-            
-            
-            
-            
             const jobPostings = [
                 {
                     id: 1,
@@ -218,33 +212,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-            // animaciones con el scroll
-            document.addEventListener("DOMContentLoaded", () => {
-                // Mostrar animación de entrada inicial
-                document.querySelectorAll('.fade-in').forEach(el => {
-                    if (el.getBoundingClientRect().top < window.innerHeight) {
-                        el.classList.add('visible');
-                    }
-                });
-        
-                // Mostrar elementos cuando entren al viewport
-                const observer = new IntersectionObserver(entries => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                        }
-                    });
-                }, { threshold: 0.1 });
-        
-                document.querySelectorAll('.hidden').forEach(el => {
-                    el.classList.add('fade-in'); // agregar animación
-                    observer.observe(el);
-                });
-            });
-
-
-
-    
-           
-        

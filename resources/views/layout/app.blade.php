@@ -14,7 +14,9 @@
     
     @vite(['resources/css/estilopagina.css'])
     @vite(['resources/css/estiloinicio_sesion.css'])
-    @vite('registrousuario.css')
+    @vite(['resources/css/estiloempleos.css'])
+    @vite(['resources/css/estilopublicar.css'])
+    @vite('resources/js/publicaroferta.js')
     @vite('resources/js/funciones.js')
     @vite('resources/js/fondo3d.js')
     @vite('resources/js/loader.js')
@@ -42,7 +44,7 @@
 
 
 
-    <script src="/resources/js/funciones.js"></script>
+   
  
 </body>
 
