@@ -1,13 +1,5 @@
 
 
-
-
-
-
-
-
-
-
 // filtros busqueda de empleos
 document.addEventListener('DOMContentLoaded', () => {
     const categoriaSelect = document.querySelector('.filtros select:first-child');
