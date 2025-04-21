@@ -1,4 +1,4 @@
-// Script para el formulario de registro que ya habías añadido...
+
 
 // Script para el formulario de recuperación de contraseña
 document.getElementById('formRecuperar').addEventListener('submit', function(event) {

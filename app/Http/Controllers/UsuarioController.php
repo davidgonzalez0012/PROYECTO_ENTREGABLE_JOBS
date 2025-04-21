@@ -25,17 +25,6 @@ class UsuarioController extends Controller
         return $Usuario;
     }
 
-    public function inicio_sesion (Request $request){
-
-        $Usuario = new Usuario();
-        $Usuario -> rol = $request-> rol;
-        // $Usuario -> email = $request -> email;
-        // $Usuario -> contraseña = $request -> contraseña;
-        // $Usuario -> save();
-
-        return $Usuario;
-    }
-
     public function recuperar_contraseña(Request $request){
         $Usuario = NEW Usuario();
         $Usuario -> email = $request -> email;
