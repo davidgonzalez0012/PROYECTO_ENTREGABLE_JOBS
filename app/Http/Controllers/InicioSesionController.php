@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class InicioSesionController extends Controller
 {
- 
+
 
     public function mostrarFormularioLogin()
     {
         return view('inicio_sesion');
     }
 
-    
+
     public function iniciarSesion(Request $request)
     {
         $request->validate([
@@ -24,11 +25,11 @@ class InicioSesionController extends Controller
 
         $credentials = $request->only('email', 'password');
         $credentials['tipo_usuario'] = $request->tipo_usuario;
-        
+
         // Intentar autenticar al usuario
         if (Auth::attempt($credentials, $request->filled('remember'))) {
             $request->session()->regenerate();
-            
+
             // Redirección según el tipo de usuario
             switch ($request->tipo_usuario) {
                 case 'Empleador':
@@ -47,14 +48,14 @@ class InicioSesionController extends Controller
         ])->withInput($request->except('password'));
     }
 
-  
+
 public function cerrarSesion(Request $request)
 {
     Auth::logout();
-    
+
     $request->session()->invalidate();
     $request->session()->regenerateToken();
-    
+
     return redirect('/');
 }
 }
